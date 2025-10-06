@@ -31,7 +31,7 @@ struct ContentView: View {
                     }
                 }
                 
-                Text("Tasks")
+                Text("Tasks To Do")
                     .font(Font.largeTitle.bold())
                     .padding()
                 

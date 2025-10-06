@@ -15,12 +15,11 @@ struct TaskView: View {
         func makeBody(configuration: Configuration) -> some View {
             HStack {
                 Image(systemName: configuration.isOn ? "checkmark.circle.fill" : "circle")
-                    .onTapGesture {
-                        configuration.isOn.toggle()
-                    }
+                    
                 configuration.label
-            }
-        }
+            }.onTapGesture {
+                configuration.isOn.toggle()
+            }        }
     }
     
     let tasks: Task
